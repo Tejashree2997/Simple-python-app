@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 
 def get_db():
-    client = MongoClient(host='app_mongodb',
+    client = MongoClient(host='20.198.105.188',
                          port=27017,
                          username='Customer',
                          password='Customer',
