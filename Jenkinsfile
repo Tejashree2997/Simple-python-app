@@ -9,7 +9,12 @@ pipeline {
 	   }
 	   stage('Build Image') {
 	        steps {
-	        sh 'sudo docker-compose up'
+	        sh 'sudo docker build -t myapp:v1 .'
+	        }
+	   }
+	   stage('Run Image') {
+	        steps {
+	        sh 'sudo docker run -d -p 5000:4000 --name my-python-app myapp:v1'
 	        }
 	   }
 	   stage('Testing'){
