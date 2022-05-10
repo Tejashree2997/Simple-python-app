@@ -2,4 +2,6 @@ flask
 pymongo==3.12.3
 flask_wtf
 flask_bcrypt
+flask_session
+flask_login
 bcrypt
