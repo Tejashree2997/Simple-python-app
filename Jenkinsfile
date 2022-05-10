@@ -7,14 +7,9 @@ pipeline {
 	        checkout scm
 	        }
 	   }
-	   stage('Build Image') {
+	   stage('Build') {
 	        steps {
-	        sh 'sudo docker build -t myapp:v1 .'
-	        }
-	   }
-	   stage('Run Image') {
-	        steps {
-	        sh 'sudo docker run -d -p 5000:5000 --name my-python-app myapp:v1'
+	        sh 'sudo docker-compose up'
 	        }
 	   }
 	   stage('Testing'){
