@@ -14,7 +14,7 @@ import shlex
 
 #myclient = MongoClient("mongodb://root:N5tfgb9QExIGYXIq@cluster0-shard-00-00.e4swe.mongodb.net:27017,cluster0-shard-00-01.e4swe.mongodb.net:27017,cluster0-shard-00-02.e4swe.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-biz1ll-shard-0&authSource=admin&retryWrites=true&w=majority")
 def get_db():
-    client = MongoClient(host='20.219.136.154',
+    client = MongoClient(host='54.234.23.123',
                          port=27017,
                          username='Customer',
                          password='Customer',
