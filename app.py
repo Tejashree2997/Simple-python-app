@@ -2,7 +2,7 @@ from unicodedata import name
 from flask import Flask, render_template, redirect, request, session, url_for, g
 # The Session instance is not used for direct access, you should always use flask.session
 from flask_session import Session
-from flask_login import login_required
+#from flask_login import login_required
 from pymongo import MongoClient
 from bson import ObjectId
 from datetime import datetime
